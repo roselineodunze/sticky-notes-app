@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#app{
+    background-color: #1e062f;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    background-size: 4em 4em;
+    background-image: linear-gradient(#372342 0.1em, transparent 0.1em), 
+    linear-gradient(90deg, #372342 0.1em, transparent 0.1em);
+    font-size: 1.5rem;
+}
+
+.card{
+    position: absolute;
+    width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px hsla(288, 50%, 22%, 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075), 
+    0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.card-header{
+    border-radius: 5px 5px 0 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body textarea{
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.saving{
+    display: flex;
+    align-items: center;
+}
+
+.saving p{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    margin-left: 5px;
+}
+
+.saving-icon{
+    animation: spin 5s linear infinite;
+}
+
+#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 1em;
+    top: 33%;
+    gap: 0.5em;
+    background-color: #311e3e;
+    padding: 0.5em;
+    border-radius: 40px;
+    z-index: 10000;
+}
+
+#add-btn{
+    background-color: #5a3e6d;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#add-btn:hover, .color:hover{
+    height: 65px;
+    width: 65px;
+}
+
+.color{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

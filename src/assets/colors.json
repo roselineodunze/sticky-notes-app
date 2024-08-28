@@ -1,0 +1,26 @@
+[
+    {
+        "id": "color-purple",
+        "colorHeader": "#FED0FD",
+        "colorBody": "#fee5fd",
+        "colorText": "#18181a"
+    },
+    {
+        "id": "color-blue",
+        "colorHeader": "#60a5fa",
+        "colorBody": "#93c5fd",
+        "colorText": "#18181a"
+    },
+    {
+        "id": "color-red",
+        "colorHeader": "#ef4444",
+        "colorBody": "#f87171",
+        "colorText": "#18181a"
+    },
+    {
+        "id": "color-green",
+        "colorHeader": "#22c55e",
+        "colorBody": "#86efac",
+        "colorText": "#18181a"
+    }
+]
